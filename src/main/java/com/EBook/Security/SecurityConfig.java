@@ -37,7 +37,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 	.authorizeHttpRequests(auth->auth
 //			.requestMatchers("/auth/login").hasRole("ADMIN").permitAll()
 //			 .antMatchers(HttpMethod.GET, "/public/**").permitAll()
-			 .requestMatchers(HttpMethod.GET).permitAll()
+//			 .requestMatchers(HttpMethod.GET).permitAll()
 			.requestMatchers("/auth/login").permitAll()
 			.requestMatchers("/auth/register").permitAll()
 			.anyRequest().authenticated()
